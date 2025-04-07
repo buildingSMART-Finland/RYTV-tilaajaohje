@@ -70,7 +70,7 @@ jobs:
           options: -v ${{ github.workspace }}/main:/git -v ${{ github.workspace }}/lastrelease:/lastrelease
           run: |  
             echo "Prosessing intermediate markdown ..."
-            python /docbuild/moustache_handler.py /git/markdown/main.md /git/staging/main.md ${{steps.last_release.outputs.html_url}} ${{steps.last_release.outputs.download_url}}
+            python /docbuild/moustache_handler.py /git/markdown/main.md /git/staging/main.md /Not_released /Not_released
             echo "Build main pdf document"
             ln -s /git/figures/ /git/staging/figures
             cp /git/figures/logo/* ./
