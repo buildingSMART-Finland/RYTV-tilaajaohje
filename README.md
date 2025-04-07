@@ -1,19 +1,14 @@
-![InfraModel logo](/figures/inframodel-cover.jpg "InfraModel logo")
+# RYTV 22005_4 "Rakennuskohteiden informaatiomallintamisen tilaajaohje"
+This repository contains development version of the RYTV 22005_4 "Rakennuskohteiden informaatiomallintamisen tilaajaohje" 
 
-# Inframodel
-This repository contains development versions of the Finnish InfraModel landxml 1.2 subset schema(s), InfraModel documentation and InfraModel sample filesets. 
+Official publications are available under an open license at www.buildingsmart.fi website.
 
-Official Inframodel publications are available under an open license at www.buildingsmart.fi website.
-
-Document artefacts are built automatically from this repository by github CI actions when content is updated. The artefacts for publification can be found from github repositorys actions tab. 
+Document artefacts are built automatically from this repository by github CI actions when content is updated. The artefacts for publification can be found from releases (or github repositorys actions tab during development). 
 
 ## Folder structure:
 
 ### /.github/workflows
 Workflows folder contains the github actions CI automation script(s).
-
-### /examples
-Examples folder contains documented example files/filesets following this specification. Example documentation shall follow the template available at /examples/sample-data-template.md. See /examples/README.md for more details
 
 ### /figures
 Figures folder contains all figures used by the documentation.
@@ -21,8 +16,6 @@ Figures folder contains all figures used by the documentation.
 ### /markdown
 Markdown folder contains the editable parts of documentation as markdown(.md) documents. 
   
-### /schema
-Schema folder contains the editable InfraModel XML schemas, one containing the elements, and another containing the objects in "im" namespace. 
 
 ## How to contribute
 
