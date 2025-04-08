@@ -21,3 +21,5 @@ Projektin päätavoitteisiin kuuluu [esim. "energiatehokas ja ympäristöystäv�
 - *LOIN* (Level of Information Need): Tiedon tarkkuus- ja yksityiskohtaisuustaso
 - *OIR* (Organizational Information Requirements): Organisaation informaatiovaatimukset
 - *PIR* (Project Information Requirements): Projektin informaatiovaatimukset
+
+## Testi
