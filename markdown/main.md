@@ -1,12 +1,8 @@
 ---
-title: "RYTV 22005_4 {{github_release}}"
-subtitle: "Finnish Inframodel application documentation for LandXML version 1.2"
-version: "{{draft-version}}"
+title: "RYTV 22005_4 EIR - Informaation vaihdon vaatimukset "
+subtitle: "Rakennuskohteiden informaatiomallintamisen tilaajaohje"
+version: "Versio:{{github_release}}\\n{{draft-version}}"
 author: "RYTV 22005_4 working group"
-#abstract: "Rakennuskohteiden informaatiomallintamisen tilaajaohje"
-#abstract-title: "Abstract"
-#classoption:
-#- abstract
 geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
 xnos-warning-level: 1
 xnos-number-by-section: true
@@ -16,5 +12,17 @@ titlepage: true
 #logo-width: "11cm"
 ---
 \clearpage
-
+{{include johdanto.md}}
+\newpage
+{{include informaatiovaatimukset.md}}
+\newpage
+{{include laadunvarmistusjahyvaksymiskriteerit.md}}
+\newpage
+{{include lahtotiedotjaresurssit.md}}
+\newpage
+{{include tiedonhallintaprosessitjatoimitusaikataulut.md}}
+\newpage
+{{include mimeamiskaytannotjametatiedot.md}}
+\newpage
+{{include liitteet.md}}
 
