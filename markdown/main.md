@@ -1,7 +1,7 @@
 ---
 title: "RYTV 22005_4 EIR - Informaation vaihdon vaatimukset "
 subtitle: "Rakennuskohteiden informaatiomallintamisen tilaajaohje"
-version: "Versio:{{github_release}}\\n{{draft-version}}"
+version: "Versio:{{github_release}}, {{draft-version}}"
 author: "RYTV 22005_4 working group"
 geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
 xnos-warning-level: 1

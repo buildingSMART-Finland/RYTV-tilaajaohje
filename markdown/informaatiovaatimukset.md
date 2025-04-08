@@ -47,7 +47,7 @@ ISO 19650-1 ja ISO 19650-2 -standardien mukaisesti tiedon tarkkuus- ja yksityisk
 ## Vaatimustaulukko
 
 |*Suunnitteluala*|*Vaihe*|*Informaatiosisältövaatimus*|*LOIN-taso*|*Formaatti*|*Vastuutaho*|
-|---|---|---|---|---|---|
+|----------------|-------|----------------------------|-----------|-----------|------------|
 |Arkkitehtuuri|Luonnosvaihe|Tilaohjelma, massoittelu|LOIN 200|IFC 4|Pääsuunnittelija|
 |Rakennesuunnittelu|Toteutussuunnittelu	Kantavat rakenteet, liitokset|LOIN 300|IFC 4|Rakennesuunnittelija|
 |TATE|Toteutussuunnittelu|Järjestelmien reitit, komponentit|LOIN 300|IFC 4|TATE-suunnittelija|
