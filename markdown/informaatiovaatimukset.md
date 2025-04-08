@@ -31,6 +31,7 @@ Omaisuuden informaatiovaatimukset määrittelevät, mitä informaatioa tarvitaan
 ## Tiedon tarkkuus- ja yksityiskohtaisuusvaatimukset (Level of Information Need)
 
 ISO 19650-1 ja ISO 19650-2 -standardien mukaisesti tiedon tarkkuus- ja yksityiskohtaisuusvaatimukset määritellään projektin vaiheen ja käyttötarkoituksen mukaan. Tässä projektissa sovelletaan seuraavia LOIN-tasoja:
+
 - Geometrinen tarkkuus:
 	- Konseptivaihe: LOIN 100 - Käsitteellinen malli
 	- Luonnosvaihe: LOIN 200 - Yleissuunnittelumalli
@@ -53,3 +54,5 @@ ISO 19650-1 ja ISO 19650-2 -standardien mukaisesti tiedon tarkkuus- ja yksityisk
 |TATE|Toteutussuunnittelu|Järjestelmien reitit, komponentit|LOIN 300|IFC 4|TATE-suunnittelija|
 |Urakoitsija|Rakentaminen|Asennustiedot, aikataulut|LOIN 400|IFC 4, BCF|Pääurakoitsija|
 |Tilaaja|Vastaanotto|Toteuma- ja ylläpitotiedot|LOIN 500|IFC 4, COBie|Tilaaja/Ylläpito|
+
+## Testi
