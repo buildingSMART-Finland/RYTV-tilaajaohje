@@ -1,6 +1,6 @@
 # Informaatiovaatimukset
 
-## Organisaation Informaatiovaatimukset (OIR)
+## Organisatoriset Informaatiovaatimukset (OIR)
 
 Tilaajan organisaation informaatiovaatimukset painottavat seuraavia näkökohtia:
 
@@ -8,6 +8,15 @@ Tilaajan organisaation informaatiovaatimukset painottavat seuraavia näkökohtia
 - Vastuullisuusraportointi: Ympäristövaikutusten ja energiatehokkuuden seuranta ja raportointi
 - Kustannusten hallinta: Rakentamis- ja ylläpitokustannusten seuranta ja ennustaminen
 - Tilojen käytön optimointi: Tilojen käyttöasteen ja käyttötavan seuranta ja hallinta
+
+## Omaisuuskohteen informaatiovaatimukset (AIR)
+
+Omaisuuden informaatiovaatimukset määrittelevät, mitä informaatioa tarvitaan rakennuksen käytön ja ylläpidon tueksi:
+
+- Tilatiedot: Tilojen käyttötarkoitus, pinta-alat, sijainti, varusteet
+- Tekniset järjestelmät: Järjestelmien komponentit, huoltokohteet, tekniset tiedot
+- Ylläpitotiedot: Huoltosuunnitelmat, käyttöikäarviot, varaosatiedot
+- Energiankulutus: Energiankulutusmittarit, kulutustiedot, energiatehokkuustavoitteet
 
 ## Projektin Informaatiovaatimukset (PIR)
 
@@ -18,15 +27,6 @@ Projektin informaatiovaatimukset määrittelevät tarkemmin, mitä informaatioa 
 - Toteutussuunnitteluvaihe: Tarkat rakenne- ja TATE-suunnitelmat, detaljit, materiaalitiedot
 - Rakentamisvaihe: Toteumatiedot, aikataulu, laadunvalvontatiedot
 - Käyttöönottovaihe: Käyttöohjeet, huoltosuunnitelmat, takuutiedot
-
-## Käyttö- ja ylläpitotiedon vaatimukset (AIR)
-
-Omaisuuden informaatiovaatimukset määrittelevät, mitä informaatioa tarvitaan rakennuksen käytön ja ylläpidon tueksi:
-
-- Tilatiedot: Tilojen käyttötarkoitus, pinta-alat, sijainti, varusteet
-- Tekniset järjestelmät: Järjestelmien komponentit, huoltokohteet, tekniset tiedot
-- Ylläpitotiedot: Huoltosuunnitelmat, käyttöikäarviot, varaosatiedot
-- Energiankulutus: Energiankulutusmittarit, kulutustiedot, energiatehokkuustavoitteet
 
 ## Tiedon tarkkuus- ja yksityiskohtaisuusvaatimukset (Level of Information Need)
 
