@@ -2,7 +2,7 @@
 
 ## Organisatoriset Informaatiovaatimukset (OIR)
 
-Tilaajan organisaation informaatiovaatimukset painottavat seuraavia näkökohtia:
+Tilaajan organisatoriset informaatiovaatimukset painottavat seuraavia näkökohtia:
 
 - Elinkaaritiedon hallinta: Tarvittavat tiedot rakennuksen koko elinkaaren hallintaan
 - Vastuullisuusraportointi: Ympäristövaikutusten ja energiatehokkuuden seuranta ja raportointi
@@ -11,7 +11,7 @@ Tilaajan organisaation informaatiovaatimukset painottavat seuraavia näkökohtia
 
 ## Omaisuuskohteen informaatiovaatimukset (AIR)
 
-Omaisuuden informaatiovaatimukset määrittelevät, mitä informaatioa tarvitaan rakennuksen käytön ja ylläpidon tueksi:
+Omaisuuskohteen informaatiovaatimukset määrittelevät, mitä informaatioa tarvitaan rakennuksen käytön ja ylläpidon tueksi:
 
 - Tilatiedot: Tilojen käyttötarkoitus, pinta-alat, sijainti, varusteet
 - Tekniset järjestelmät: Järjestelmien komponentit, huoltokohteet, tekniset tiedot
