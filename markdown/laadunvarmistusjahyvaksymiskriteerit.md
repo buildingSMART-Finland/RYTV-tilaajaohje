@@ -1,4 +1,4 @@
-# Informaatiomallinnuksen Laadunvarmistus ja Hyväksymiskriteerit
+# Informaatiomallinnuksen laadunvarmistus ja hyväksymiskriteerit
 
 ## Projektin Informaatiostandardit
 
@@ -8,7 +8,7 @@ Projektissa noudatetaan seuraavia standardeja ja ohjeita:
 - *IFC 4 (ISO 16739): Tiedonsiirron avoin standardi
 - Yleiset Informaatiomallivaatimukset (*YTV 2012*/päivitykset): Kansalliset vaatimukset
 - BuildingSMART International -standardit: *IDS*, *bSDD*
-- *COBie* (Construction Operations Building Information Exchange): Ylläpitotiedon siirto
+- BuildingSMART Finland, RYTV informaatiovaatimukset
 
 ## Informaatiotuotantomenetelmät ja -käytännöt (esim. CDE)
 
@@ -33,6 +33,6 @@ Informaatiomallien laadunvarmistus ja hyväksyminen tapahtuvat seuraavan prosess
 
 |*Tarkastuskohde*|*Tarkastaja*|*Tarkastustapa*|Hyväksymiskriteerit|
 |----------------|------------|---------------|-------------------|
-Tekninen laatu|Informaatiomallikoordinaattori|Solibri Model Checker|Ei törmäyksiä, nimeäminen standardin mukainen|
+Tekninen laatu|Tietoomallikoordinaattori|Solibri Model Checker|Ei törmäyksiä, nimeäminen standardin mukainen|
 Informaatiosisältö|Pääsuunnittelija|Informaatiosisällön tarkistuslista|Vaaditut tiedot löytyvät, riittävä tarkkuus|
 Toiminnallisuus|Tilaaja|Käyttötapausten testaus|Malli vastaa toiminnallisia vaatimuksia|
