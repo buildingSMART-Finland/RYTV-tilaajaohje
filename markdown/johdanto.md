@@ -2,7 +2,7 @@
 
 ## Dokumentin tarkoitus ja laajuus
 
-Tämä Exchange Information Requirements (EIR) -dokumentti määrittelee tiedonvaihtovaatimukset [Projektin nimi] -projektissa. Dokumentti on laadittu ISO 19650-standardisarjan mukaisesti ja sen tarkoituksena on määritellä tilaajan informaatiovaatimukset, jotka ohjaavat informaatiomallipohjaista suunnittelua, rakentamista ja ylläpitoa. EIR määrittelee mitä informaatioa tuotetaan, milloin, miten ja kenen toimesta projektin eri vaiheissa.
+Tämä EIR -dokumentti määrittelee informaation vaihdon vaatimukset [Projektin nimi] -projektissa. Dokumentti on laadittu ISO 19650-standardisarjan mukaisesti ja sen tarkoituksena on määritellä tilaajan informaatiovaatimukset, jotka ohjaavat informaatiomallipohjaista suunnittelua, rakentamista ja ylläpitoa. EIR määrittelee mitä informaatioa tuotetaan, milloin, miten ja kenen toimesta projektin eri vaiheissa.
 Dokumentti toimii ohjeena kaikille projektin osapuolille ja varmistaa yhteisen ymmärryksen tiedonhallinnan käytännöistä ja vaatimuksista.
 
 ## Projektin yleiskuvaus
@@ -12,14 +12,9 @@ Projektin päätavoitteisiin kuuluu [esim. "energiatehokas ja ympäristöystäv�
 
 ## Terminologia ja määritelmät 
 
-- *AIR* (Asset Information Requirements): Käyttö- ja ylläpitotiedon vaatimukset
-- *BIM* (Building Information Modeling): Rakennuksen informaatiomallintaminen
-- *bSDD* (buildingSMART Data Dictionary): BuildingSMART-organisaation ylläpitämä kansainvälinen informaatiosanakirja
+- *AIR* (Asset Information Requirements): Omaisuuskohteen informaatiovaatimukset
 - *CDE* (Common Data Environment): Yhteinen informaatioympäristö
 - *IDS* (Information Delivery Specification): Tiedon toimituksen määrittely
-- *IFC* (Industry Foundation Classes): Avoin tiedostomuoto informaatiomallien siirtämiseen
-- *LOIN* (Level of Information Need): Tiedon tarkkuus- ja yksityiskohtaisuustaso
-- *OIR* (Organizational Information Requirements): Organisaation informaatiovaatimukset
+- *LOIN* (Level of Information Need): Informaatiotarve
+- *OIR* (Organizational Information Requirements): Organisatoriset informaatiovaatimukset
 - *PIR* (Project Information Requirements): Projektin informaatiovaatimukset
-
-## Testi
