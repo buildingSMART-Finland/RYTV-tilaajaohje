@@ -9,6 +9,7 @@ Projektissa noudatetaan seuraavia standardeja ja ohjeita:
 - Yleiset Informaatiomallivaatimukset (*YTV 2012*/päivitykset): Kansalliset vaatimukset
 - BuildingSMART International -standardit: *IDS*, *bSDD*
 - *COBie* (Construction Operations Building Information Exchange): Ylläpitotiedon siirto
+- BuildingSMART Finlad, RYTV informaatiovaatimukset
 
 ## Informaatiotuotantomenetelmät ja -käytännöt (esim. CDE)
 
