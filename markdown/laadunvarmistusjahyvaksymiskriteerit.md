@@ -1,4 +1,4 @@
-# Informaatiomallinnuksen laadunvarmistus ja hyväksymiskriteerit
+# Laadunvarmistus ja hyväksymiskäytännöt
 
 ## Projektin Informaatiostandardit
 
@@ -12,7 +12,7 @@ Projektissa noudatetaan seuraavia standardeja ja ohjeita:
 
 ## Informaatiotuotantomenetelmät ja -käytännöt (esim. CDE)
 
-Projektissa käytetään yhteistä informaatioympäristöä (CDE) tiedon hallintaan. Valittu CDE-alusta on [CDE-alustan nimi, esim. "Trimble Connect"], jota käytetään kaikkeen projektin tiedonvaihtoon.
+Projektissa käytetään yhteistä informaatioympäristöä (CDE) tiedon hallintaan. Valittu CDE-alusta on [CDE-alustan nimi], jota käytetään kaikkeen projektin tiedonvaihtoon.
 CDE-ympäristön rakenne noudattaa ISO 19650-2 -standardin mukaista jaottelua:
 
 - *WIP* (Work In Progress): Keskeneräiset työversiot
