@@ -1,1 +1,1 @@
-# Nimeämiskäytännöt, luokittelu ja nimistöt
+# Nimeämiskäytännöt, luokittelut ja nimistöt
