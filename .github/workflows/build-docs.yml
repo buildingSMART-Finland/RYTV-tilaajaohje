@@ -83,9 +83,9 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ${{github.workspace}}/main/gh-pages
+          source: ./main/gh-pages
           destination: ./_site
-      - name: Upload generated pagesartifact
+      - name: Upload generated pages
         uses: actions/upload-pages-artifact@v3
 
       - name: Collect  artefacts 
