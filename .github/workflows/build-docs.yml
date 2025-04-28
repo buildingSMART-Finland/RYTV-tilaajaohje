@@ -20,7 +20,7 @@ jobs:
   # This workflow contains a single job called "build"
   build-documentation:
     # The type of runner that the job will run on
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     # permissions
     permissions:
           contents: write
@@ -63,6 +63,7 @@ jobs:
         run: |
           mkdir ${{github.workspace}}/main/artefact
           mkdir ${{github.workspace}}/main/staging
+          mkdir ${{github.workspace}}/main/gh-pages
       - name: Run the build process with imbuilder docker
         uses: addnab/docker-run-action@v3
         with:
@@ -75,6 +76,18 @@ jobs:
             ln -s /git/figures/ /git/staging/figures
             cp /git/figures/logo/* ./
             python /docbuild/make-pdf.py /git/staging/main.md /git/artefact/RYTV-tilaajaohje.pdf
+            ln -s /git/figures/ /git/gh-pages/figures
+            cp /git/staging/main.md  /git/gh-pages/index.md
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ${{github.workspace}}/main/gh-pages
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+
       - name: Collect  artefacts 
         uses: actions/upload-artifact@v4
         with:
@@ -87,4 +100,15 @@ jobs:
         with:
           files: |
             ${{ github.workspace }}/main/artefact/RYTV-tilaajaohje.pdf
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build-documentation
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
         
