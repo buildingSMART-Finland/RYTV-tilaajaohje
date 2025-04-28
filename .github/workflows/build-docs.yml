@@ -80,6 +80,9 @@ jobs:
             cp /git/staging/main.md  /git/gh-pages/index.md
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          #auto enable github pages for repository
+          enablement: true
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
