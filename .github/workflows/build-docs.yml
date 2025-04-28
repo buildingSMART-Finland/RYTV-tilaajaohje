@@ -85,8 +85,8 @@ jobs:
         with:
           source: ${{github.workspace}}/main/gh-pages
           destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload generated pagesartifact
+        uses: actions/upload-pages-artifact@v3
 
       - name: Collect  artefacts 
         uses: actions/upload-artifact@v4
