@@ -84,6 +84,7 @@ jobs:
         with:
           #auto enable github pages for repository
           enablement: true
+          generator_config_file: .github-pages/jekyll_conf.yml    
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
