@@ -64,7 +64,8 @@ jobs:
           mkdir ${{github.workspace}}/main/artefact
           mkdir ${{github.workspace}}/main/staging
           mkdir ${{github.workspace}}/main/gh-pages
-          ln -s ${{github.workspace}}/main/figures/ ${{github.workspace}}/main/gh-pages/figures
+          mkdir ${{github.workspace}}/main/gh-pages/figures
+          cp -r ${{github.workspace}}/main/figures/ ${{github.workspace}}/main/gh-pages/figures
       - name: Run the build process with imbuilder docker
         uses: addnab/docker-run-action@v3
         with:
