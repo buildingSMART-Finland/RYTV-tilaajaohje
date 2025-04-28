@@ -64,6 +64,7 @@ jobs:
           mkdir ${{github.workspace}}/main/artefact
           mkdir ${{github.workspace}}/main/staging
           mkdir ${{github.workspace}}/main/gh-pages
+          ln -s ${{github.workspace}}/main/figures/ ${{github.workspace}}/gh-pages/figures
       - name: Run the build process with imbuilder docker
         uses: addnab/docker-run-action@v3
         with:
@@ -76,7 +77,6 @@ jobs:
             ln -s /git/figures/ /git/staging/figures
             cp /git/figures/logo/* ./
             python /docbuild/make-pdf.py /git/staging/main.md /git/artefact/RYTV-tilaajaohje.pdf
-            ln -s /git/figures/ /git/gh-pages/figures
             cp /git/staging/main.md  /git/gh-pages/index.md
       - name: Setup Pages
         uses: actions/configure-pages@v5
