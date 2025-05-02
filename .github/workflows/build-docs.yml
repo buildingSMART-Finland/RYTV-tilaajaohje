@@ -78,21 +78,17 @@ jobs:
             ln -s /git/figures/ /git/staging/figures
             cp /git/figures/logo/* ./
             python /docbuild/make-pdf.py /git/staging/main.md /git/artefact/RYTV-tilaajaohje.pdf
-            cp /git/staging/main.md  /git/gh-pages/index.md
+            pandoc --template=/git/templates/github-pages.html --toc -o /git/gh-pages/index.html /git/staging/main.md
+            cp /git/templates/styles.css /git/gh-pages/styles.css
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           #auto enable github pages for repository
-          enablement: true
-          generator_config_file: .github-pages/jekyll_conf.yml    
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./main/gh-pages
-          destination: ./_site
+          enablement: true  
       - name: Upload generated pages
         uses: actions/upload-pages-artifact@v3
-
+        with: ./main/gh-pages
+          path: 
       - name: Collect  artefacts 
         uses: actions/upload-artifact@v4
         with:
