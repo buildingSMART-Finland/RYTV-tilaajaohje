@@ -87,8 +87,8 @@ jobs:
           enablement: true  
       - name: Upload generated pages
         uses: actions/upload-pages-artifact@v3
-        with: ./main/gh-pages
-          path: 
+        with: 
+          path: ./main/gh-pages 
       - name: Collect  artefacts 
         uses: actions/upload-artifact@v4
         with:
