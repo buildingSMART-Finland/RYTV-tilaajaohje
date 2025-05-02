@@ -20,10 +20,12 @@ jobs:
   # This workflow contains a single job called "build"
   build-documentation:
     # The type of runner that the job will run on
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     # permissions
     permissions:
-          contents: write
+      contents: write
+      pages: write
+      id-token: write
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -63,6 +65,10 @@ jobs:
         run: |
           mkdir ${{github.workspace}}/main/artefact
           mkdir ${{github.workspace}}/main/staging
+          mkdir ${{github.workspace}}/main/gh-pages
+          mkdir ${{github.workspace}}/main/gh-pages/figures
+          cp -r ${{github.workspace}}/main/figures ${{github.workspace}}/main/gh-pages/
+          ls -R ${{github.workspace}}/main/gh-pages/figures
       - name: Run the build process with imbuilder docker
         uses: addnab/docker-run-action@v3
         with:
@@ -75,6 +81,18 @@ jobs:
             ln -s /git/figures/ /git/staging/figures
             cp /git/figures/logo/* ./
             python /docbuild/make-pdf.py /git/staging/main.md /git/artefact/RYTV-tilaajaohje.pdf
+            pandoc --template=/git/templates/github-pages.html --toc -o /git/gh-pages/index.html /git/staging/main.md
+            cp /git/templates/styles.css /git/gh-pages/styles.css
+            cp /git/figures/logo/favicon.ico /git/gh-pages/favicon.ico
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          #auto enable github pages for repository
+          enablement: true  
+      - name: Upload generated pages
+        uses: actions/upload-pages-artifact@v3
+        with: 
+          path: ./main/gh-pages 
       - name: Collect  artefacts 
         uses: actions/upload-artifact@v4
         with:
@@ -87,4 +105,19 @@ jobs:
         with:
           files: |
             ${{ github.workspace }}/main/artefact/RYTV-tilaajaohje.pdf
+  # Deployment job
+  deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build-documentation
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
         

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="generator" content="pandoc">
+    <meta name="description" content="">
+$for(author-meta)$
+    <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(keywords)$
+    <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+
+    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+
+    <style type="text/css">code{white-space: pre;}</style>
+$if(toc)$
+    <style type="text/css">.sidebar ul{padding-left: 10px;}</style>
+$endif$
+$if(quotes)$
+    <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+    <style type="text/css">
+$highlighting-css$
+    </style>
+$endif$
+$for(css)$
+    <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+  </head>
+
+  <body>
+$for(include-before)$
+    $include-before$
+$endfor$
+	<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-brand">
+				<img src="figures/logo/bsf2.png" alt="bSF logo" style="height:20px;" class="rounded-0"> $pagetitle$ 
+			</div>
+		</div>
+	</nav>
+
+    <div class="container-fluid">
+		<div class="row">
+$if(toc)$
+			<div class="col-sm-3 col-md-2 bg-light"> 
+				<div id="sidebar" class="sidebar col-sm-3 col-md-2">
+					<p>Table of contents</p>
+					<div id="toccontent">
+						$toc$
+					</div>
+				</div>
+			</div>
+			<div id="main" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+$else$
+			<div id="main" class="col-sm-12">
+$endif$
+				<div class="alert alert-danger" role="alert">
+					This document is not a specification release!<br>
+					It represents the content of "$version$"
+				</div>
+				<h1>$subtitle$<br><br></h1>
+$body$
+			</div>
+		</div>
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script>
+
+		
+		var items = document.getElementById('main').getElementsByTagName('h1');
+        for(var i = 0; i < items.length; ++i){
+			items[i].className = "msec";
+		}
+		var items = document.getElementById('main').getElementsByTagName('h2');
+        for(var i = 0; i < items.length; ++i){
+			items[i].className = "msec";
+		}
+		var items = document.getElementById('main').getElementsByTagName('h3');
+        for(var i = 0; i < items.length; ++i){
+			items[i].className = "msec";
+		}
+		var items = document.getElementById('main').getElementsByTagName('h4');
+        for(var i = 0; i < items.length; ++i){
+			items[i].className = "msec";
+		}
+		
+
+		var tables = document.getElementsByTagName("table");
+        for(var i = 0; i < tables.length; ++i){
+            tables[i].className += "table table-bordered table-hover";
+        }
+    </script>
+$for(include-after)$
+  $include-after$
+$endfor$
+  </body>
+</html>
