@@ -42,6 +42,6 @@ Informaation tarkkuuden ja yksityiskohtaisuuden määritelmä
 Informaatiotarvetaulukot
 
 Viittaukset kansallisiin, (kuten RYTV, YTV, YIV), Organisaation tai projektin informaatiotarvetaulukoihin.
-- Arkkitehti https://drive.buildingsmart.fi/s/mfrRxKoZYCXiK4X
-- Rakenne https://drive.buildingsmart.fi/s/HS3iyQg8WBZmMbM
-- Talotekniikka https://drive.buildingsmart.fi/s/S2p59nX27yZ2LzM
+- [Arkkitehti](https://drive.buildingsmart.fi/s/mfrRxKoZYCXiK4X)
+- [Rakenne](https://drive.buildingsmart.fi/s/HS3iyQg8WBZmMbM)
+- [Talotekniikka](https://drive.buildingsmart.fi/s/S2p59nX27yZ2LzM)
