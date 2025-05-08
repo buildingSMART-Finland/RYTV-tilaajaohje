@@ -3,7 +3,9 @@ This repository contains development version of the RYTV 22005_4 "Rakennuskohtei
 
 Official publications are available under an open license at www.buildingsmart.fi website.
 
-Document artefacts are built automatically from this repository by github CI actions when content is updated. The artefacts for publification can be found from releases (or github repositorys actions tab during development). 
+Document artefacts are built automatically from this repository by github CI actions when content is updated. The artefacts for publification can be found from releases (or github repositorys actions tab during development).
+
+A live development version can be found at https://buildingsmart-finland.github.io/RYTV-tilaajaohje/
 
 ## Folder structure:
 
