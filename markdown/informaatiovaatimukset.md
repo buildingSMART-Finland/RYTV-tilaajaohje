@@ -34,6 +34,14 @@ Projektin informaatiovaatimukset määrittelevät tarkemmin, mitä informaatioa 
 ## Informaatiotarve (Level of Information Need)
 
 Informaation tarkkuuden ja yksityiskohtaisuuden määritelmä
+
 - Geometrinen tarkkkuus
 - Informaatiosisällön laajuus
 - Dokumentit
+
+Informaatiotarvetaulukot
+
+Viittaukset kansallisiin, (kuten RYTV, YTV, YIV), Organisaation tai projektin informaatiotarvetaulukoihin.
+- Arkkitehti https://drive.buildingsmart.fi/s/mfrRxKoZYCXiK4X
+- Rakenne https://drive.buildingsmart.fi/s/HS3iyQg8WBZmMbM
+- Talotekniikka https://drive.buildingsmart.fi/s/S2p59nX27yZ2LzM
