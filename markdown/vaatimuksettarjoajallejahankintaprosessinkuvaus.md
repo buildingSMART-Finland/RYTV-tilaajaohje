@@ -1,0 +1,1 @@
+# Vaatimukset tarjoajalle ja hankintaprosessin kuvaus

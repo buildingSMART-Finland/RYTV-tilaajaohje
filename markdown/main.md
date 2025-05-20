@@ -16,6 +16,8 @@ titlepage: true
 \newpage
 {{include informaatiovaatimukset.md}}
 \newpage
+{{include vaatimuksettarjoajallejahankintaprosessinkuvaus.md}}
+\newpage
 {{include laadunvarmistusjahyvaksymiskriteerit.md}}
 \newpage
 {{include lahtotiedotjaresurssit.md}}
